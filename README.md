@@ -51,7 +51,7 @@ But please **do not resell** or repackage this project for profit.
 
 ## 📄 License
 
-MIT License  
+Custom MIT License  
 © 2025 Krishnamohan Yagneswaran
 
 ---
