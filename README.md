@@ -54,4 +54,6 @@ But please **do not resell** or repackage this project for profit.
 Custom MIT License  
 © 2025 Krishnamohan Yagneswaran
 
+This software is free to use and modify for personal or educational purposes.  
+**Commercial use or resale is strictly prohibited** without explicit permission from the author.
 ---
