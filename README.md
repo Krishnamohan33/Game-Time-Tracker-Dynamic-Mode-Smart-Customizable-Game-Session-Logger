@@ -1,101 +1,147 @@
-# 🎮 Game Time Tracker (Dynamic Mode)
+<div align="center">
+  <h1>🎮 Game Time Tracker</h1>
+  <p>A lightweight and modern game session logger with focus-aware stats.</p>
 
-A lightweight, modern desktop application to help you understand and manage how much time you spend playing your favorite PC games.
+  <a href="https://github.com/Krishnamohan33/Game-Time-Tracker-Dynamic-Mode-Smart-Customizable-Game-Session-Logger">
+    <img src="https://img.shields.io/github/stars/Krishnamohan33/Game-Time-Tracker-Dynamic-Mode-Smart-Customizable-Game-Session-Logger?style=social" alt="GitHub Stars">
+  </a>
+  <a href="#license">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT">
+  </a>
+  <a href="#contributors">
+    <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg" alt="PRs Welcome">
+  </a>
+  <a href="https://razorpay.me/@krishnamohanyagneswaran">
+    <img src="https://img.shields.io/badge/donate-razorpay-blue" alt="Donate on Razorpay">
+  </a>
+  <a href="https://buymeacoffee.com/krishnamohanz">
+    <img src="https://img.shields.io/badge/buy%20me%20a%20coffee-%E2%98%95-yellow" alt="Buy Me a Coffee">
+  </a>
+</div>
 
-Enter your game's `.exe` name (for example, `SkyrimSE.exe`) and the app will automatically detect when the game is running, track your sessions, and give you insights like total playtime, average session length, and a daily focus score.
+---
+
+## 📌 Overview
+
+**Game Time Tracker (Dynamic Mode)** is a desktop application to track your game sessions, playtime, and focus using only your game's `.exe` name.
+
+It helps you:
+- Understand your play habits
+- Stay mindful of gaming time
+- Log accurate session durations
+- Track daily and total usage
 
 ---
 
 ## 💡 Features
 
-- **Dynamic Game Detection**  
-  Just enter the game's `.exe` name — no setup files or folders needed.
+- 🔍 **Dynamic Game Detection**  
+  Enter any `.exe` name—no setup or integrations required.
 
-- **Session Tracking**
-  - Automatically logs game start and end times
-  - Tracks all sessions locally
+- 📊 **Session Analytics**
+  - Total playtime (hours)
+  - Average session duration
+  - Daily session length
 
-- **Usage Analytics**
-  - Total hours played
-  - Average session duration (in minutes)
-  - Daily playtime (in minutes)
-  - Smart "Focus Score" based on a 2-hour daily target, with color-coded feedback
+- 🧠 **Focus Score System**
+  - Color-coded (🟢🟠🔴) feedback based on daily usage target (2 hours/day)
+  - Visual indicators help reduce screen overuse
 
-- **Modern GUI**
-  - Dark mode interface
-  - Clean layout with live status updates
-  - GitHub and license footer included
+- 💾 **Session Logging**
+  - All game activity is stored locally in `sessions.db` (SQLite)
+  - Persistent session history
+
+- 🖥️ **Modern GUI**
+  - Responsive and clean Tkinter interface
+  - Dark mode, elegant fonts, color-coded metrics
+  - GitHub link and license embedded in the footer
 
 ---
 
-## ✅ What's Included in Version 1.0
+## ✅ Version 1.0 Includes
 
-- 🔍 Real-time tracking of any game entered by `.exe` name
-- 💾 Local database using SQLite (`sessions.db`)
-- 📊 Playtime stats: total hours, average session, daily time
-- 🧠 Focus score with health-focused limits
-- 🖥️ Clean GUI with responsive updates
-- 🔗 Embedded GitHub link and license in footer
+- Support for any `.exe` name
+- Real-time tracking and updates
+- Local database session saving
+- Stats dashboard with session summaries
+- Daily focus goal calculation
+- Exportable, customizable source
 
 ---
 
 ## 🛠 Tech Stack
 
-- Python 3.10 or higher
-- `psutil` – process detection
-- `sqlite3` – session data storage
-- `tkinter` – GUI interface
-- `threading` – background tracking loop
+- **Python 3.10+**
+- `tkinter` (for GUI)
+- `psutil` (for detecting processes)
+- `sqlite3` (for saving sessions)
+- `threading` (for non-blocking logic)
 
 ---
 
-## 📚 Understanding the Code
+## 🚀 Getting Started
 
-The code is structured to be simple and readable:
-- `tracker_loop()` runs continuously and checks if your game is active.
-- When a session starts or ends, it logs timestamps to a local SQLite database.
-- The GUI updates the session statistics in real-time and displays your current status.
-- The focus score helps you monitor how long you’ve played today and gives a green, orange, or red signal based on daily usage.
+1. Clone or download this repository
+2. Run `main.py`
+3. Enter your game’s `.exe` name (e.g., `Cyberpunk2077.exe`)
+4. Start playing — the app will track everything automatically
 
-All logic is commented, and the code is organized in a way that makes it easy to learn from or customize.
-
----
-
-## 🚀 Usage Instructions
-
-1. Open the application (`main.py`)
-2. Enter the name of your game's executable (e.g., `GTA5.exe`)
-3. The app will track when the game runs and logs your sessions automatically
-4. Your total time, session info, and daily focus score will be displayed in the GUI
-
-To create a standalone `.exe` version, you can use tools like PyInstaller (optional).
+> To build an `.exe`, use [PyInstaller](https://pyinstaller.org/) (see docs for more).
 
 ---
 
-## 🤝 Contributions & Community
+## 📚 Documentation
 
-This project is open source and intended to stay free for all users.
+- Code is clean, modular, and beginner-friendly
+- Functions are documented inline
+- Refer to `main.py` and `tracker.py` for core logic
+- All logic uses standard Python libraries, no complex dependencies
 
-You are welcome to:
-- Contribute code or ideas
-- Suggest improvements
-- Support the developer through optional donations
+---
 
-Please do **not**:
-- Repackage or resell this app
-- Use it commercially without the author's permission
+## 🙌 Contributors
+
+### 👤 Lead Developer  
+**Krishnamohan Yagneswaran**  
+🔗 [GitHub](https://github.com/Krishnamohan33)
+
+---
+
+### 👥 Become a Contributor
+
+Want to contribute? Here’s how:
+
+- Fork the repo
+- Make changes and improvements
+- Submit a Pull Request (PR)
+- Get listed here once merged!
+
+---
+
+## ❤️ Support & Donations
+
+If you enjoy using this tool, consider supporting development:
+
+- ☕ [Buy Me a Coffee](https://buymeacoffee.com/krishnamohanz)
+- 💳 [Donate via Razorpay](https://razorpay.me/@krishnamohanyagneswaran)
+
+Your support keeps this project open and maintained.
 
 ---
 
 ## 📄 License
 
-MIT License (Custom Condition: Non-Commercial Use Only)  
+**MIT License – Non-Commercial Use Only**  
 © 2025 Krishnamohan Yagneswaran
 
-Permission is granted, free of charge, to use, copy, modify, and distribute this software for **personal and educational use** only.
+You are free to use, modify, and share this software for personal or educational purposes.  
+**Commercial use or resale is strictly prohibited** without prior permission.
 
-**Commercial use or resale is strictly prohibited.**
-
-All copies must include this license notice.
+> All copies must include this license notice.
 
 ---
+
+<div align="center">
+  <strong>🌟 Star this repo if you find it useful. Contributions welcome!</strong><br />
+  <a href="https://github.com/Krishnamohan33/Game-Time-Tracker-Dynamic-Mode-Smart-Customizable-Game-Session-Logger">GitHub Repo ↗</a>
+</div>
